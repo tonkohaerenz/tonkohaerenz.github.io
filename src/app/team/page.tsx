@@ -103,7 +103,7 @@ export default function TeamPage() {
         {teamMembersDarmstadt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:border-slate-400">
+              <div className="card">
               <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
                 {member.surname.charAt(0)}
               </div>
@@ -113,7 +113,7 @@ export default function TeamPage() {
             </div>
             </a>
           ) : (
-          <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+          <div key={index} className="card">
             <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
               {member.surname.charAt(0)}
             </div>
@@ -131,7 +131,7 @@ export default function TeamPage() {
         {teamMembersFrankfurt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:border-slate-400">
+              <div className="card">
               <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
                 {member.surname.charAt(0)}
               </div>
@@ -141,7 +141,7 @@ export default function TeamPage() {
             </div>
             </a>
           ) : (
-          <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+          <div key={index} className="card">
             <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
               {member.surname.charAt(0)}
             </div>
