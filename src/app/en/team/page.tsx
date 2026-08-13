@@ -63,90 +63,90 @@ const teamMembersFrankfurt = [
 
 export default function TeamPage() {
   return (
-    <section className="space-y-6">
-      <header className="border-b border-slate-200 pb-4">
-        <h1 className="text-3xl font-bold text-slate-900">Our Team</h1>
-        <p className="text-slate-600 mt-1 teyt-justify [hyphens:auto]"><span className="italic">Tone and Coherence</span> is a DFG-funded collaborative project between the University of Bonn (Rheinische Friedrich-Wilhelms-Universität), Johann Wolfgang Goethe University Frankfurt, and the Technical University of Darmstadt. The team is therefore spread across these three cities, and the collaborative project work is coordinated by the project leaders.</p>
+    <section className="section-spacing">
+      <header>
+        <h1>Our Team</h1>
+        <p><span className="italic">Tone and Coherence</span> is a DFG-funded collaborative project between the University of Bonn (Rheinische Friedrich-Wilhelms-Universität), Johann Wolfgang Goethe University Frankfurt, and the Technical University of Darmstadt. The team is therefore spread across these three cities, and the collaborative project work is coordinated by the project leaders.</p>
       </header>
 
-      <h2 className="text-2xl font-bold text-slate-900">University of Bonn</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+      <h2>University of Bonn</h2>
+      <div className="grid-team">
         {teamMembersBonn.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:border-slate-400">
-              <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+              <div className="cardLink">
+              <div className="icon-circle">
                 {member.surname.charAt(0)}
               </div>
-              <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
-              <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-              <p className="text-sm text-slate-600">{member.bio}</p>
+              <h3>{member.name+' '+member.surname}</h3>
+              <p>{member.role}</p>
+              <p>{member.bio}</p>
             </div>
             </a>
           ) : (
-          <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
-            <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+          <div key={index} className="card">
+            <div className="icon-circle">
               {member.surname.charAt(0)}
             </div>
-            <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
-            <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-            <p className="text-sm text-slate-600">{member.bio}</p>
+            <h3>{member.name+' '+member.surname}</h3>
+            <p>{member.role}</p>
+            <p>{member.bio}</p>
           </div>
           )
         ))}
       </div>
 
-      <hr className="border-b border-slate-200"/>
-      <h2 className="text-2xl font-bold text-slate-900">TU Darmstadt</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+      <hr/>
+      <h2>TU Darmstadt</h2>
+      <div className="grid-team">
         {teamMembersDarmstadt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:border-slate-400">
-              <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+              <div className="cardLink">
+              <div className="icon-circle">
                 {member.surname.charAt(0)}
               </div>
-              <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
-              <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-              <p className="text-sm text-slate-600">{member.bio}</p>
+              <h3>{member.name+' '+member.surname}</h3>
+              <p>{member.role}</p>
+              <p>{member.bio}</p>
             </div>
             </a>
           ) : (
-          <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
-            <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+          <div key={index} className="card">
+            <div className="icon-circle">
               {member.surname.charAt(0)}
             </div>
-            <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
-            <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-            <p className="text-sm text-slate-600">{member.bio}</p>
+            <h3>{member.name+' '+member.surname}</h3>
+            <p>{member.role}</p>
+            <p>{member.bio}</p>
           </div>
           )
         ))}
       </div>
 
-      <hr className="border-b border-slate-200"/>
-      <h2 className="text-2xl font-bold text-slate-900">University Frankfurt</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+      <hr/>
+      <h2>University Frankfurt</h2>
+      <div className="grid-team">
         {teamMembersFrankfurt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm hover:border-slate-400">
-              <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+              <div className="cardLink">
+              <div className="icon-circle">
                 {member.surname.charAt(0)}
               </div>
-              <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
-              <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-              <p className="text-sm text-slate-600">{member.bio}</p>
+              <h3>{member.name+' '+member.surname}</h3>
+              <p>{member.role}</p>
+              <p>{member.bio}</p>
             </div>
             </a>
           ) : (
-          <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
-            <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+          <div key={index} className="card">
+            <div className="icon-circle">
               {member.surname.charAt(0)}
             </div>
-            <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
-            <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-            <p className="text-sm text-slate-600">{member.bio}</p>
+            <h3>{member.name+' '+member.surname}</h3>
+            <p>{member.role}</p>
+            <p>{member.bio}</p>
           </div>
           )
         ))}

@@ -64,10 +64,10 @@ const teamMembersFrankfurt = [
 
 export default function TeamPage() {
   return (
-    <section className="space-y-6">
+    <section className="section-spacing">
       <header>
         <h1>Unser Team</h1>
-        <p className="text-slate-600 mt-1 teyt-justify [hyphens:auto]"><span className="italic">Ton und Kohärenz</span> ist ein DFG-gefördertes Verbundprojekt zwischen der Rheinischen Friedrich-Wilhelms-Universität Bonn, der Johann Wolfgang Goethe-Universität Frankfurt am Main und der Technischen Universität Darmstadt. Das Team ist folglich auf diese drei Städte aufgeteilt und die kollaborative Projekarbeit wird von den Projketleiterinnen koordiniert.</p>
+        <p><span className="italic">Ton und Kohärenz</span> ist ein DFG-gefördertes Verbundprojekt zwischen der Rheinischen Friedrich-Wilhelms-Universität Bonn, der Johann Wolfgang Goethe-Universität Frankfurt am Main und der Technischen Universität Darmstadt. Das Team ist folglich auf diese drei Städte aufgeteilt und die kollaborative Projekarbeit wird von den Projketleiterinnen koordiniert.</p>
       </header>
 
       <h2>Rheinische Friedrich-Wilhelms-Universität Bonn</h2>
@@ -80,7 +80,7 @@ export default function TeamPage() {
                 {member.surname.charAt(0)}
               </div>
               <h3>{member.name+' '+member.surname}</h3>
-              <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
+              <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
             </a>
@@ -90,7 +90,7 @@ export default function TeamPage() {
               {member.surname.charAt(0)}
             </div>
             <h3>{member.name+' '+member.surname}</h3>
-            <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
+            <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
           )
@@ -108,7 +108,7 @@ export default function TeamPage() {
                 {member.surname.charAt(0)}
               </div>
               <h3>{member.name+' '+member.surname}</h3>
-              <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
+              <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
             </a>
@@ -118,7 +118,7 @@ export default function TeamPage() {
               {member.surname.charAt(0)}
             </div>
             <h3>{member.name+' '+member.surname}</h3>
-            <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
+            <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
           )
@@ -136,7 +136,7 @@ export default function TeamPage() {
                 {member.surname.charAt(0)}
               </div>
               <h3>{member.name+' '+member.surname}</h3>
-              <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
+              <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
             </a>
@@ -146,7 +146,7 @@ export default function TeamPage() {
               {member.surname.charAt(0)}
             </div>
             <h3>{member.name+' '+member.surname}</h3>
-            <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
+            <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
           )
