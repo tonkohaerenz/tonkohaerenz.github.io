@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const teamMembersBonn = [
   {
-    name: 'Prof Dr. Claudia',
+    name: 'Prof. Dr. Claudia',
     surname: 'Lauer',
     role: 'Projektleitung - Uni Bonn',
     bio: 'Verbundkoordination, Koordination Team Bonn, Kohärenzbildung',
@@ -41,7 +41,7 @@ const teamMembersDarmstadt = [
 ];
 const teamMembersFrankfurt = [
   {
-    name: 'Prof Dr. Franziska',
+    name: 'Prof. Dr. Franziska',
     surname: 'Wenzel',
     role: 'Projektleitung - GU Frankfurt',
     bio: 'Verbundkoordination, Koordination Team Frankfurt, Kohärenzbildung',
@@ -66,88 +66,88 @@ export default function TeamPage() {
   return (
     <section className="space-y-6">
       <header>
-        <h1 className="text-3xl font-bold text-slate-900">Unser Team</h1>
+        <h1>Unser Team</h1>
         <p className="text-slate-600 mt-1 teyt-justify [hyphens:auto]"><span className="italic">Ton und Kohärenz</span> ist ein DFG-gefördertes Verbundprojekt zwischen der Rheinischen Friedrich-Wilhelms-Universität Bonn, der Johann Wolfgang Goethe-Universität Frankfurt am Main und der Technischen Universität Darmstadt. Das Team ist folglich auf diese drei Städte aufgeteilt und die kollaborative Projekarbeit wird von den Projketleiterinnen koordiniert.</p>
       </header>
 
-      <h2 className="text-2xl font-bold text-slate-900">Rheinische Friedrich-Wilhelms-Universität Bonn</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+      <h2>Rheinische Friedrich-Wilhelms-Universität Bonn</h2>
+      <div className="grid-team">
         {teamMembersBonn.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="card">
-              <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+              <div className="cardLink">
+              <div className="icon-circle">
                 {member.surname.charAt(0)}
               </div>
-              <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
+              <h3>{member.name+' '+member.surname}</h3>
               <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-              <p className="text-sm text-slate-600">{member.bio}</p>
+              <p>{member.bio}</p>
             </div>
             </a>
           ) : (
           <div key={index} className="card">
-            <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+            <div className="icon-circle">
               {member.surname.charAt(0)}
             </div>
-            <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
+            <h3>{member.name+' '+member.surname}</h3>
             <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-            <p className="text-sm text-slate-600">{member.bio}</p>
+            <p>{member.bio}</p>
           </div>
           )
         ))}
       </div>
 
-      <hr className="border-b border-slate-200"/>
-      <h2 className="text-2xl font-bold text-slate-900">TU Darmstadt</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+      <hr/>
+      <h2>TU Darmstadt</h2>
+      <div className="grid-team">
         {teamMembersDarmstadt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="card">
-              <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+              <div className="cardLink">
+              <div className="icon-circle">
                 {member.surname.charAt(0)}
               </div>
-              <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
+              <h3>{member.name+' '+member.surname}</h3>
               <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-              <p className="text-sm text-slate-600">{member.bio}</p>
+              <p>{member.bio}</p>
             </div>
             </a>
           ) : (
           <div key={index} className="card">
-            <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+            <div className="icon-circle">
               {member.surname.charAt(0)}
             </div>
-            <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
+            <h3>{member.name+' '+member.surname}</h3>
             <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-            <p className="text-sm text-slate-600">{member.bio}</p>
+            <p>{member.bio}</p>
           </div>
           )
         ))}
       </div>
 
-      <hr className="border-b border-slate-200"/>
-      <h2 className="text-2xl font-bold text-slate-900">Universität Frankfurt</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+      <hr/>
+      <h2>Universität Frankfurt</h2>
+      <div className="grid-team">
         {teamMembersFrankfurt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="card">
-              <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+              <div className="cardLink">
+              <div className="icon-circle">
                 {member.surname.charAt(0)}
               </div>
-              <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
+              <h3>{member.name+' '+member.surname}</h3>
               <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-              <p className="text-sm text-slate-600">{member.bio}</p>
+              <p>{member.bio}</p>
             </div>
             </a>
           ) : (
           <div key={index} className="card">
-            <div className="w-12 h-12 bg-[#1c82b3]/30 text-[#1c82b3] rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-sm">
+            <div className="icon-circle">
               {member.surname.charAt(0)}
             </div>
-            <h2 className="text-lg font-semibold text-slate-800">{member.name+' '+member.surname}</h2>
+            <h3>{member.name+' '+member.surname}</h3>
             <p className="text-xs font-medium text-[#1c82b3] mb-2">{member.role}</p>
-            <p className="text-sm text-slate-600">{member.bio}</p>
+            <p>{member.bio}</p>
           </div>
           )
         ))}

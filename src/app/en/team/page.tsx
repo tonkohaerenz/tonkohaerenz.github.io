@@ -3,7 +3,7 @@ import Link from "next/link";
 // app/en/team/page.tsx
 const teamMembersBonn = [
   {
-    name: 'Prof Dr. Claudia',
+    name: 'Prof. Dr. Claudia',
     surname: 'Lauer',
     role: 'Project Management - Uni Bonn',
     bio: 'Network Coordination, Coordination Team Bonn and Coherence Analysis',
@@ -40,7 +40,7 @@ const teamMembersDarmstadt = [
 ];
 const teamMembersFrankfurt = [
   {
-    name: 'Prof Dr. Franziska',
+    name: 'Prof. Dr. Franziska',
     surname: 'Wenzel',
     role: 'Project Management - GU Frankfurt',
     bio: 'Network Coordination, Coordination Team Frankfurt and Coherence Analysis',

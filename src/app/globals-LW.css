@@ -19,21 +19,28 @@
   /* Überschriften */
   --heading: #020617; /* slate-950 */
   --heading-secondary: #1e293b; /* slate-800 */
+  --heading-tertiary: #1e293b; /* slate-800 */
 
   /* Normaler Text */
   --text: #334155; /* slate-700 */
-  --text-muted: #475569;
+  --text-muted: #475569; /* slate-600 */
 
   /* Abgrenzung */
   --border: #e2e8f0;
   --border-hover: #334155; /* slate-200 */
 
   /* Schatten */
-    --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06);
-    --shadow-md: 0 4px 6px rgb(15 23 42 / 0.08),
-               0 2px 4px rgb(15 23 42 / 0.04);
-    --shadow-lg: 0 10px 15px rgb(15 23 42 / 0.10),
-               0 4px 6px rgb(15 23 42 / 0.05);
+  --shadow-header: 0 4px 6px rgb(15 23 42 / 0.10);
+  --shadow-box: 0 1px 4px rgb(15 23 42 / 0.12);
+  --shadow-circle: 0 1px 4px rgb(15 23 42 / 0.12);
+
+  /*Tests
+  --shadow-sm-box: 0 1px 2px rgb(15 23 42 / 0.06);
+  --shadow-md-box: 0 4px 6px rgb(15 23 42 / 0.08),
+              0 2px 4px rgb(15 23 42 / 0.04);
+  --shadow-lg: 0 10px 15px rgb(15 23 42 / 0.10),
+              0 4px 6px rgb(15 23 42 / 0.05);
+  */
 }
 
 
@@ -62,23 +69,24 @@
 
   --heading: #ededed;
   --heading-secondary: #f8fafc;
+  --heading-tertiary: #e2e8f0; /* slate-200 */
 
   --text-muted: #f1f5f9; /* slate-400 */
 
   --border: #334155; /* slate-700 */
   --border-hover: #e2e8f0;
 
-  
-  --shadow-sm:
-    0 1px 2px rgb(0 0 0 / 0.4),
-    0 0 0 1px rgb(255 255 255 / 0.03);
-  /*
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4),
-              0 0 0 1px rgb(255 255 255 / 0.03); */
-  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.30),
-               0 2px 4px rgb(0 0 0 / 0.20);
-  --shadow-lg: 0 10px 15px rgb(0 0 0 / 0.40),
-               0 4px 6px rgb(0 0 0 / 0.25);
+  /* Tests
+  --shadow-sm-box:
+    0 4px 12px rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-md-box: 0 4px 15px rgb(255 255 255 / 0.12),
+               0 0 20px rgb(255 255 255 / 0.05);
+  */
+
+  --shadow-box: 0 1px 4px rgb(255 255 255 / 0.25);
+  --shadow-header: 0 4px 8px rgb(255 255 255 / 0.15);
+  --shadow-circle: 0 1px 4px rgb(255 255 255 / 0.08);
 }
 
 body {
@@ -94,8 +102,16 @@ h1{
 }
 
 h2{
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--heading-secondary);
+  padding-top: 0.5rem;
+}
+
+h3{
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--heading-tertiary);
 }
 
 p {
@@ -112,12 +128,36 @@ header {
   background-color: var(--background);
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  position: sticky;
   top: 0;
   z-index: 50;
-  box-shadow: var(--shadow-sm);
   align-items: center;
+}
+
+.header-primary {
+  position: sticky;
+  padding-top: 0.5rem;
+  box-shadow: var(--shadow-header);
+}
+
+.cardLink {
+  background-color: var(--background-secondary);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: var(--shadow-box);
+}
+
+.cardLink > * + * {
+  margin-top: 0.8rem;
+}
+
+.cardLink > p + p {
+  margin-top: 0.5rem;
+}
+
+.cardLink:hover {
+  border-color: var(--border-hover);
 }
 
 .card {
@@ -126,19 +166,53 @@ header {
   border-radius: 0.5rem;
   border: 1px solid var(--border);
   color: var(--text);
-  box-shadow: 0 1px 2px 0 var(--shadow-sm);
+  box-shadow: var(--shadow-box);
 }
+
 
 .card > * + * {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
-.card:hover {
-  border-color: var(--border-hover);
+
+.card > p + p {
+  margin-top: 0.5rem;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.grid-team {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.icon-circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(28 130 179 / 30%);
+  color: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-circle);
 }
