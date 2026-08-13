@@ -1,7 +1,7 @@
 // app/kontakt/page.tsx
 export default function KontaktPage() {
   return (
-    <section className="space-y-6 max-w-2xl">
+    <section className="content-section-half">
       <header>
         <h1>Contact & Legal Notice</h1>
         <p>Please feel free to contact us with any questions or suggestions regarding the project.</p>
@@ -21,7 +21,7 @@ export default function KontaktPage() {
         <div>
           <h2>E-Mail</h2>
           <p>
-            <a href="mailto:kontakt@projekt.de" className="text-indigo-600 hover:underline">
+            <a href="mailto:kontakt@projekt.de" className="text-blue hover:underline">
               contact@project.en
             </a>
           </p>
