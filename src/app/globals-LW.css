@@ -68,7 +68,7 @@
   --background: #0a0a0a; /* #1e293b */
   --background-secondary:#1e293b; /* slate-800 */
   --foreground: #ededed;
-  --info-background: rgb(28 130 179 / 15%);
+  --info-background: rgb(28 130 179 / 30%);
 
   --heading: #ededed;
   --heading-secondary: #f8fafc;
@@ -159,6 +159,19 @@ header {
 .header-secondary {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.header-primary-container {
+  width: 100%;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cardLink {
@@ -314,4 +327,53 @@ figure {
   justify-content: center;
   overflow: hidden;
   border-radius: 0.5rem;
+}
+
+.nav-links-language {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.nav-links-pages {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary)
+}
+
+.header-primary-content {
+  width: 100%;
+  max-width: 64rem;
+  height: 4rem;
+  margin: 0 auto;
+  /*padding: 0 1rem;*/
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 0.025em;
+  color: var(--heading-secondary);
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: var(--blue);
+}
+
+.header-primary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  height: 4rem;
 }

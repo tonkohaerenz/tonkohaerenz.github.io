@@ -29,10 +29,10 @@ export default function Header() {
 
   return (
     <header className="header-primary">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="header-primary-container">
         {isEnglish ? (
           <>
-          <div className='container mx-auto max-w-5xl h-16 flex items-center gap-2'>
+          <div className='header-primary-content'>
           {/* Logo / Projekttitel */}
             <Link href="/">
               <Image
@@ -43,19 +43,19 @@ export default function Header() {
                 priority
               />
             </Link>
-            <Link href="/" className="font-semibold text-lg tracking-wide text-slate-800 hover:text-blue transition leading-tight">
+            <Link href="/" className="logo">
               Tone and<span className="text-blue font-bold"> Coherence</span>
             </Link>
           </div>
-          <div className='container mx-auto max-w-5xl h-16 flex items-center gap-10 justify-end'>
+          <div className='header-primary-actions'>
           {/* Navigation */}
-          <nav className="flex space-x-6 text-sm font-medium">
+          <nav className="nav-links-pages">
             <Link
               href="/en"
               className={`transition ${
                 pathname === "/en"
                   ? "font-bold text-yellow"
-                  : "text-slate-600 hover:text-yellow"
+                  : "hover:text-yellow"
               }`}
             >
               Project
@@ -65,7 +65,7 @@ export default function Header() {
               className={`transition ${
                 pathname.startsWith("/en/team")
                   ? "font-bold text-red"
-                  : "text-slate-600 hover:text-red"
+                  : "hover:text-red"
               }`}
             >
               Team
@@ -75,17 +75,17 @@ export default function Header() {
               className={`transition ${
                 pathname.startsWith("/en/contact")
                   ? "font-bold text-green"
-                  : "text-slate-600 hover:text-green"
+                  : "hover:text-green"
               }`}
             >
               Contact
             </Link>
           </nav>
-          <nav className="flex space-x-1 text-sm font-medium text-slate-600">
+          <nav className="nav-links-language">
             <Link href={germanPath} className={
             !isEnglish
               ? "font-bold text-blue"
-              : "text-slate-600 hover:text-blue"
+              : "hover:text-blue"
             }>
               German
             </Link>
@@ -93,19 +93,19 @@ export default function Header() {
             <Link href={englishPath} className={
               isEnglish
                 ? "font-bold text-blue"
-                : "text-slate-600 hover:text-blue"
+                : "hover:text-blue"
             }>
               English
             </Link>
           </nav>
-          <nav className="flex space-x-1 text-sm font-medium text-slate-600">
+          <nav className="nav-links-language">
             <ThemeToggle/>
           </nav>
           </div>
           </>
         ) : (
           <>
-          <div className='container mx-auto max-w-5xl h-16 flex items-center gap-2'>
+          <div className='header-primary-content'>
           {/* Logo / Projekttitel */}
             <Link href="/">
               <Image
@@ -116,19 +116,19 @@ export default function Header() {
                 priority
               />
             </Link>
-            <Link href="/" className="font-semibold text-lg tracking-wide text-slate-800 hover:text-[#1c82b3] transition leading-tight">
+            <Link href="/" className="logo">
               Ton und<span className="text-blue font-bold"> Kohärenz</span>
             </Link>
           </div>
-          <div className='container mx-auto max-w-5xl h-16 flex items-center gap-10 justify-end'>
+          <div className='header-primary-actions'>
           {/* Navigation */}
-         <nav className="flex space-x-6 text-sm font-medium">
+         <nav className="nav-links-pages">
             <Link
               href="/"
               className={`transition ${
                 pathname === "/"
                   ? "font-bold text-yellow"
-                  : "text-slate-600 hover:text-yellow"
+                  : "hover:text-yellow"
               }`}
             >
               Projekt
@@ -139,7 +139,7 @@ export default function Header() {
               className={`transition ${
                 pathname.startsWith("/team")
                   ? "font-bold text-red"
-                  : "text-slate-600 hover:text-red"
+                  : "hover:text-red"
               }`}
             >
               Team
@@ -150,17 +150,17 @@ export default function Header() {
               className={`transition ${
                 pathname.startsWith("/kontakt")
                   ? "font-bold text-green"
-                  : "text-slate-600 hover:text-green"
+                  : "hover:text-green"
               }`}
             >
               Kontakt
             </Link>
           </nav>
-          <nav className="flex space-x-1 text-sm font-medium text-slate-600">
+          <nav className="nav-links-language">
             <Link href={germanPath} className={
             !isEnglish
               ? "font-bold text-blue"
-              : "text-slate-600 hover:text-blue"
+              : "hover:text-blue"
             }>
               Deutsch
             </Link>
@@ -168,12 +168,12 @@ export default function Header() {
             <Link href={englishPath} className={
               isEnglish
                 ? "font-bold text-blue"
-                : "text-slate-600 hover:text-blue"
+                : "hover:text-blue"
             }>
               Englisch
             </Link>
           </nav>
-          <nav className="flex space-x-1 text-sm font-medium text-slate-600">
+          <nav className="nav-links-language">
             <ThemeToggle/>
           </nav>
           </div>
