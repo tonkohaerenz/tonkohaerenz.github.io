@@ -27,6 +27,7 @@ export default function HomePage() {
           </h1>
           <p>
             Funding: DFG | Project duration: 10/2025 – 09/2028<br/>
+            GEPRIS: <a href="https://gepris.dfg.de/project/556112393?lang=en" target="_blank">https://gepris.dfg.de/project/556112393?lang=en</a>
           </p>
           </div>
         </header>

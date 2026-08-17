@@ -66,7 +66,7 @@ export default function TeamPage() {
     <section className="section-spacing">
       <header>
         <h1>Our Team</h1>
-        <p><span className="italic">Tone and Coherence</span> is a DFG-funded collaborative project between the University of Bonn (Rheinische Friedrich-Wilhelms-Universität), Johann Wolfgang Goethe University Frankfurt, and the Technical University of Darmstadt. The team is therefore spread across these three cities, and the collaborative project work is coordinated by the project leaders.</p>
+        <p><span className="italic">Tone and Coherence</span> is a DFG-funded collaborative project between the University of Bonn (Rheinische Friedrich-Wilhelms-Universität), Goethe University Frankfurt/Main, and the Technical University of Darmstadt. The team is therefore spread across these three cities, and the collaborative project work is coordinated by the project leaders.</p>
       </header>
 
       <h2>University of Bonn</h2>
@@ -97,9 +97,9 @@ export default function TeamPage() {
       </div>
 
       <hr/>
-      <h2>TU Darmstadt</h2>
+      <h2>Goethe University Frankfurt/Main</h2>
       <div className="grid-team">
-        {teamMembersDarmstadt.map((member, index) => (
+        {teamMembersFrankfurt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">
@@ -125,9 +125,9 @@ export default function TeamPage() {
       </div>
 
       <hr/>
-      <h2>University Frankfurt</h2>
+      <h2>Technical University of Darmstadt</h2>
       <div className="grid-team">
-        {teamMembersFrankfurt.map((member, index) => (
+        {teamMembersDarmstadt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">

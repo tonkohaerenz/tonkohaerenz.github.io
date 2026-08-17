@@ -67,7 +67,7 @@ export default function TeamPage() {
     <section className="section-spacing">
       <header>
         <h1>Unser Team</h1>
-        <p><span className="italic">Ton und Kohärenz</span> ist ein DFG-gefördertes Verbundprojekt zwischen der Rheinischen Friedrich-Wilhelms-Universität Bonn, der Johann Wolfgang Goethe-Universität Frankfurt am Main und der Technischen Universität Darmstadt. Das Team ist folglich auf diese drei Städte aufgeteilt und die kollaborative Projekarbeit wird von den Projketleiterinnen koordiniert.</p>
+        <p><span className="italic">Ton und Kohärenz</span> ist ein DFG-gefördertes Verbundprojekt zwischen der Rheinischen Friedrich-Wilhelms-Universität Bonn, der Goethe-Universität Frankfurt am Main und der Technischen Universität Darmstadt. Das Team ist folglich auf diese drei Städte aufgeteilt und die kollaborative Projekarbeit wird von den Projketleiterinnen koordiniert.</p>
       </header>
 
       <h2>Rheinische Friedrich-Wilhelms-Universität Bonn</h2>
@@ -98,9 +98,9 @@ export default function TeamPage() {
       </div>
 
       <hr/>
-      <h2>TU Darmstadt</h2>
+      <h2>Goethe-Universität Frankfurt am Main</h2>
       <div className="grid-team">
-        {teamMembersDarmstadt.map((member, index) => (
+        {teamMembersFrankfurt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">
@@ -126,9 +126,9 @@ export default function TeamPage() {
       </div>
 
       <hr/>
-      <h2>Universität Frankfurt</h2>
+      <h2>Technische Universität Darmstadt</h2>
       <div className="grid-team">
-        {teamMembersFrankfurt.map((member, index) => (
+        {teamMembersDarmstadt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">

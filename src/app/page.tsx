@@ -1,6 +1,7 @@
 // app/page.tsx
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         </h1>
         <p>
           Finanzierung: DFG | Laufzeit: 10/2025 – 09/2028<br/>
+          GEPRIS: <a href="https://gepris.dfg.de/project/556112393" target="_blank">https://gepris.dfg.de/project/556112393</a>
         </p>
       </header>
 

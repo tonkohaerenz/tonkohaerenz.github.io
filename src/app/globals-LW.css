@@ -148,7 +148,11 @@ figcaption {
   color: var(--text-caption);
 }
 .blue{
-  color: var(--blue)
+  color: var(--blue);
+}
+
+.red{
+  color: var(--red);
 }
 
 Link {
@@ -419,4 +423,9 @@ figure {
   display: flex;
   gap: 1rem;
   font-size: 0.875rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--blue);
 }
