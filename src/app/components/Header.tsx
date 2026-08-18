@@ -164,7 +164,7 @@ export default function Header() {
             }>
               Deutsch
             </Link>
-            <span>|</span>
+            <span className="language-divider" aria-hidden="true"/>
             <Link href={englishPath} className={
               isEnglish
                 ? "font-bold text-blue"

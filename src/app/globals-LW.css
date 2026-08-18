@@ -378,6 +378,16 @@ figure {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
+
+  align-items: center;
+}
+
+.language-divider {
+  display: flex;
+  width: 1px;
+  height: 1em;
+  background-color: currentColor;
+  position: relative;
 }
 
 .nav-links-pages {
