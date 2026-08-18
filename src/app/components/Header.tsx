@@ -34,7 +34,7 @@ export default function Header() {
           <>
           <div className='header-primary-content'>
           {/* Logo / Projekttitel */}
-            <Link href="/">
+            <Link href="/en/">
               <Image
                 src="/tonundkohaerenz_rund.png"
                 alt="Projektlogo"
@@ -43,7 +43,7 @@ export default function Header() {
                 priority
               />
             </Link>
-            <Link href="/" className="logo">
+            <Link href="/en/" className="logo">
               Tone and<span className="text-blue font-bold"> Coherence</span>
             </Link>
           </div>

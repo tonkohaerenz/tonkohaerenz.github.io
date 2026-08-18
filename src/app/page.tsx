@@ -16,7 +16,7 @@ export default function HomePage() {
         </h1>
         <p>
           Finanzierung: DFG | Laufzeit: 10/2025 – 09/2028<br/>
-          GEPRIS: <a href="https://gepris.dfg.de/project/556112393" target="_blank">https://gepris.dfg.de/project/556112393</a>
+          GEPRIS: <a className="a-blue" href="https://gepris.dfg.de/project/556112393" target="_blank">https://gepris.dfg.de/project/556112393</a>
         </p>
       </header>
 

@@ -45,12 +45,10 @@ export default function Footer() {
         {isEnglish ? (
           <>
           <Link href="/en/contact" className="hover:underline">Legal Notice</Link>
-          <Link href="/en/contact" className="hover:underline">Privacy Policy</Link>
           </>
           ) : (
             <>
           <Link href="/kontakt" className="hover:underline">Impressum</Link>
-          <Link href="/kontakt" className="hover:underline">Datenschutz</Link>
           </>
           )
         }

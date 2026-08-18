@@ -60,12 +60,14 @@
   --color-yellow: var(--yellow);
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+  */
 
 .dark{
   --background: #0a0a0a; /* #1e293b */
@@ -425,7 +427,7 @@ figure {
   font-size: 0.875rem;
 }
 
-a:hover {
+.a-blue:hover {
   text-decoration: underline;
   color: var(--blue);
 }
