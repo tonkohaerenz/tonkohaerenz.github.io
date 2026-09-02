@@ -80,6 +80,16 @@ export default function Header() {
             >
               Contact
             </Link>
+            <Link
+              href="/en/digitalEdition"
+              className={`transition ${
+                pathname.startsWith("/en/digitalEdition")
+                  ? "font-bold text-blue"
+                  : "hover:text-blue"
+              }`}
+            >
+              Digital Edition
+            </Link>
           </nav>
           <nav className="nav-links-language">
             <Link href={germanPath} className={
@@ -154,6 +164,16 @@ export default function Header() {
               }`}
             >
               Kontakt
+            </Link>
+            <Link
+              href="/digitaleEdition"
+              className={`transition ${
+                pathname.startsWith("/digitaleEdition")
+                  ? "font-bold text-blue"
+                  : "hover:text-blue"
+              }`}
+            >
+              Digitale Edition
             </Link>
           </nav>
           <nav className="nav-links-language">

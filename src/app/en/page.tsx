@@ -23,7 +23,7 @@ export default function HomePage() {
             Research Project
           </span>
           <h1>
-            Tone and coherence. An annotated digital edition of the Frauenlobtöne in the Kolmar song manuscript
+            Tone and coherence. An annotated digital edition of the 'Frauenlobtöne' in the Kolmar song manuscript
           </h1>
           <p>
             Funding: DFG | Project duration: 10/2025 – 09/2028<br/>
