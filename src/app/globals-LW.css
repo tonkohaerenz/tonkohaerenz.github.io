@@ -217,6 +217,33 @@ footer {
   gap: 1rem;
 }
 
+.cardLinkBonn {
+  background-color: color-mix(in srgb, var(--yellow) 30%, transparent);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: var(--shadow-box);
+}
+
+.cardLinkFrankfurt {
+  background-color: color-mix(in srgb, var(--blue) 30%, transparent);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: var(--shadow-box);
+}
+
+.cardLinkDarmstadt {
+  background-color: color-mix(in srgb, var(--red) 30%, transparent);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: var(--shadow-box);
+}
+
 .cardLink {
   background-color: var(--background-secondary);
   padding: 1.5rem;
@@ -378,7 +405,7 @@ figure {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
-
+  white-space: nowrap;
   align-items: center;
 }
 
@@ -395,7 +422,11 @@ figure {
   gap: 1.5rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text-secondary)
+  color: var(--text-secondary);
+  white-space: nowrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .header-primary-content {
@@ -403,6 +434,7 @@ figure {
   max-width: 64rem;
   height: 4rem;
   margin: 0 auto;
+  padding: 1rem;
   /*padding: 0 1rem;*/
 
   display: flex;

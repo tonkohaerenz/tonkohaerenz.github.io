@@ -88,7 +88,7 @@ export default function Header() {
                   : "hover:text-blue"
               }`}
             >
-              Digital Edition
+              Outlook:<br/>Digital Edition
             </Link>
           </nav>
           <nav className="nav-links-language">
@@ -173,6 +173,7 @@ export default function Header() {
                   : "hover:text-blue"
               }`}
             >
+              Ausblick:<br/>
               Digitale Edition
             </Link>
           </nav>
