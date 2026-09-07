@@ -3,15 +3,17 @@ import Link from "next/link";
 // app/en/team/page.tsx
 const teamMembersBonn = [
   {
-    name: 'Prof. Dr. Claudia',
+    title: 'Prof. Dr.',
+    name: 'Claudia',
     surname: 'Lauer',
-    role: 'Project Management - Uni Bonn',
+    role: 'Project Management (Bonn)',
     bio: 'Network Coordination, Coordination Team Bonn and Coherence Analysis',
     link: 'https://www.iglk.uni-bonn.de/de/institut/abteilungen/germanistische-mediaevistik/personalseiten/claudia-lauer'
   },
   {
     name: 'Benedikt',
     surname: 'Gnosa',
+    title2: 'M.A.',
     role: 'Research Assistant',
     bio: 'Coherence Analysis',
     link: 'https://www.iglk.uni-bonn.de/de/institut/abteilungen/germanistische-mediaevistik/personalseiten/benedikt_gnosa'
@@ -19,36 +21,41 @@ const teamMembersBonn = [
   {
     name: 'Quirin',
     surname: 'Demmler',
+    title2: 'B.A.',
     role: 'Student Assistant',
     bio: 'Transcription, Reading Text and Translation'
   }
 ];
 const teamMembersDarmstadt = [
   {
-    name: 'Prof. Dr. Andrea',
+    title: 'Prof. Dr.',
+    name: 'Andrea',
     surname: 'Rapp',
-    role: 'Project Management - TU Darmstadt',
+    role: 'Project Management (Darmstadt)',
     bio: 'Network Coordination, Coordination Team Darmstadt and Digital Infrastructure',
     link: 'https://www.linglit.tu-darmstadt.de/institutlinglit/mitarbeitende/andrearapp/index.en.jsp'
   },
   {
     name: 'Leonie',
     surname: 'Weiß',
+    title2: 'M.A.',
     role: 'Research Assistant',
     bio: 'Digital Infrastructure, Data Encoding and Website',
   }
 ];
 const teamMembersFrankfurt = [
   {
-    name: 'Prof. Dr. Franziska',
+    title: 'Prof. Dr.',
+    name: 'Franziska',
     surname: 'Wenzel',
-    role: 'Project Management - GU Frankfurt',
+    role: 'Project Management (Frankfurt)',
     bio: 'Network Coordination, Coordination Team Frankfurt and Coherence Analysis',
     link: 'https://www.fb10.uni-frankfurt.de/97301012/FB_10___IDLD___%C3%84DL___Mitarbeiterinnen_und_Mitarbeiter___Lehrende___Wenzel'
   },
   {
     name: 'Malin',
     surname: 'Kipke',
+    title2: 'M.A.',
     role: 'Research Assistant',
     bio: 'Transcription, Reading Text, Translation and Data Encoding',
     link: 'https://www.fb10.uni-frankfurt.de/127664970/Kipke__Malin__M_A?'
@@ -76,9 +83,9 @@ export default function TeamPage() {
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">
               <div className="icon-circle">
-                {member.surname.charAt(0)}
+                {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
-              <h3>{member.name+' '+member.surname}</h3>
+              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
               <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
@@ -86,9 +93,9 @@ export default function TeamPage() {
           ) : (
           <div key={index} className="card">
             <div className="icon-circle">
-              {member.surname.charAt(0)}
+              {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
-            <h3>{member.name+' '+member.surname}</h3>
+            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
             <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
@@ -104,9 +111,9 @@ export default function TeamPage() {
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">
               <div className="icon-circle">
-                {member.surname.charAt(0)}
+                {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
-              <h3>{member.name+' '+member.surname}</h3>
+              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
               <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
@@ -114,9 +121,9 @@ export default function TeamPage() {
           ) : (
           <div key={index} className="card">
             <div className="icon-circle">
-              {member.surname.charAt(0)}
+              {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
-            <h3>{member.name+' '+member.surname}</h3>
+            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
             <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
@@ -132,9 +139,9 @@ export default function TeamPage() {
             <a key={index} href={member.link} target="_blank">
               <div className="cardLink">
               <div className="icon-circle">
-                {member.surname.charAt(0)}
+                {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
-              <h3>{member.name+' '+member.surname}</h3>
+              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
               <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
@@ -142,9 +149,9 @@ export default function TeamPage() {
           ) : (
           <div key={index} className="card">
             <div className="icon-circle">
-              {member.surname.charAt(0)}
+              {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
-            <h3>{member.name+' '+member.surname}</h3>
+            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
             <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>

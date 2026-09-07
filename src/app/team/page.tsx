@@ -7,13 +7,14 @@ const teamMembersBonn = [
     title: 'Prof. Dr.',
     name: 'Claudia',
     surname: 'Lauer',
-    role: 'Projektleitung - Uni Bonn',
+    role: 'Projektleitung (Bonn)',
     bio: 'Verbundkoordination, Koordination Team Bonn, Kohärenzbildung',
     link: 'https://www.iglk.uni-bonn.de/de/institut/abteilungen/germanistische-mediaevistik/personalseiten/claudia-lauer'
   },
   {
     name: 'Benedikt',
     surname: 'Gnosa',
+    title2: 'M.A.',
     role: 'Wissenschaftlicher Mitarbeiter',
     bio: 'Kohärenzbildung',
     link: 'https://www.iglk.uni-bonn.de/de/institut/abteilungen/germanistische-mediaevistik/personalseiten/benedikt_gnosa'
@@ -21,6 +22,7 @@ const teamMembersBonn = [
   {
     name: 'Quirin',
     surname: 'Demmler',
+    title2: 'B.A.',
     role: 'Studentische Hilfskraft',
     bio: 'Transkription, Lesefassung und Übersetzung'
   }
@@ -30,13 +32,14 @@ const teamMembersDarmstadt = [
     title: 'Prof. Dr.',
     name: 'Andrea',
     surname: 'Rapp',
-    role: 'Projektleitung - TU Darmstadt',
+    role: 'Projektleitung (Darmstadt)',
     bio: 'Verbundkoordination, Koordination Team Darmstadt, Digitale Infrastruktur',
     link: 'https://www.linglit.tu-darmstadt.de/institutlinglit/mitarbeitende/andrearapp/index.de.jsp'
   },
   {
     name: 'Leonie',
     surname: 'Weiß',
+    title2: 'M.A.',
     role: 'Wissenschaftliche Mitarbeiterin',
     bio: 'Digitale Infrastruktur, Website, Datenformat',
   }
@@ -46,13 +49,14 @@ const teamMembersFrankfurt = [
     title: 'Prof. Dr.',
     name: 'Franziska',
     surname: 'Wenzel',
-    role: 'Projektleitung - GU Frankfurt',
+    role: 'Projektleitung (Frankfurt)',
     bio: 'Verbundkoordination, Koordination Team Frankfurt, Kohärenzbildung',
     link: 'https://www.fb10.uni-frankfurt.de/97301012/FB_10___IDLD___%C3%84DL___Mitarbeiterinnen_und_Mitarbeiter___Lehrende___Wenzel'
   },
   {
     name: 'Malin',
     surname: 'Kipke',
+    title2: 'M.A.',
     role: 'Wissenschaftliche Mitarbeiterin',
     bio: 'Transkription, Lesefassung, Übersetzung, Datenkodierung',
     link: 'https://www.fb10.uni-frankfurt.de/127664970/Kipke__Malin__M_A?'
@@ -82,7 +86,7 @@ export default function TeamPage() {
               <div className="icon-circle">
                 {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
-              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}</h3>
+              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
               <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
@@ -92,7 +96,7 @@ export default function TeamPage() {
             <div className="icon-circle">
               {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
-            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}</h3>
+            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
             <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
@@ -110,7 +114,7 @@ export default function TeamPage() {
               <div className="icon-circle">
                 {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
-              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}</h3>
+              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
               <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
@@ -120,7 +124,7 @@ export default function TeamPage() {
             <div className="icon-circle">
               {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
-            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}</h3>
+            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
             <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>
@@ -138,7 +142,7 @@ export default function TeamPage() {
               <div className="icon-circle">
                 {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
-              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}</h3>
+              <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
               <p>{member.role}</p>
               <p>{member.bio}</p>
             </div>
@@ -148,7 +152,7 @@ export default function TeamPage() {
             <div className="icon-circle">
               {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
-            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}</h3>
+            <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
             <p>{member.role}</p>
             <p>{member.bio}</p>
           </div>

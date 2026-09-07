@@ -12,7 +12,7 @@ export default function HomePage() {
           Forschungsprojekt
         </span>
         <h1>
-          Ton und Kohärenz. Eine kommentierte digitale Edition der 'Frauenlobtöne' in der Kolmarer Liederhandschrift
+          Ton und Kohärenz. Eine kommentierte digitale Edition der ‚Frauenlobtöne‘ in der Kolmarer Liederhandschrift
         </h1>
         <p>
           Finanzierung: DFG | Laufzeit: 10/2025 – 09/2028<br/>
@@ -34,12 +34,12 @@ export default function HomePage() {
           />
           </a>
           <figcaption>
-            Abbildung: Ausschnitt aus der ersten Seite der Grundweise.
+            Abbildung: Erste Seite des Goldenen Tons.
           </figcaption>
         </figure>
         <h2>Über das Projekt</h2>
         <p> {/* Für Blocksatz mit Silbentrennung: className="text-justify [hyphens:auto]"*/}
-          Im Zentrum des Projekts zu einer kommentierten digitalen Edition der 22 'Frauenlobtöne' in der Kolmarer Liederhandschrift k aus der zweiten Hälfte des 15. Jahrhunderts steht die grundlegende Forschungsfrage, welche spezifischen textuell-lyrischen Kohärenzformen und tonalen Kohärenzcharakteristiken zusätzlich zu Form und Melodie mit der Tonautorschaft, dem Töneprinzip und den Tonnamen spätmittelalterlicher Lyrik verbunden sind. Eng damit verknüpft ist die fundamentale Frage, wie sich diese besondere Form spätmittelalterlicher Lyrik inklusive ihrer formalen und semantischen Kohärenzen adäquat edieren, kommentieren und visualisieren lässt. Damit verfolgt das Projekt ein in gleicher Weise analytisches wie ergebnisorientiertes Interesse: die wissenschaftliche Exploration und Präsentation spätmittelalterlicher lyrischer Tonkohärenzen und damit verbundener Tonlogiken im Rahmen einer kommentierten digitalen Edition nach dem Töneprinzip, die letztlich auch über die Kolmarer Liederhandschrift hinaus für die weitere editorische Erschließung von Tönen und tonalen Kohärenzcharakteristiken spätmittelalterlicher Lieddichtung fruchtbar gemacht werden kann.
+          Im Zentrum des Projekts zu einer kommentierten digitalen Edition der 22 ‚Frauenlobtöne‘ in der Kolmarer Liederhandschrift k aus der zweiten Hälfte des 15. Jahrhunderts steht die grundlegende Forschungsfrage, welche spezifischen textuell-lyrischen Kohärenzformen und tonalen Kohärenzcharakteristiken zusätzlich zu Form und Melodie mit der Tonautorschaft, dem Töneprinzip und den Tonnamen spätmittelalterlicher Lyrik verbunden sind. Eng damit verknüpft ist die fundamentale Frage, wie sich diese besondere Form spätmittelalterlicher Lyrik inklusive ihrer formalen und semantischen Kohärenzen adäquat edieren, kommentieren und visualisieren lässt. Damit verfolgt das Projekt ein in gleicher Weise analytisches wie ergebnisorientiertes Interesse: die wissenschaftliche Exploration und Präsentation spätmittelalterlicher lyrischer Tonkohärenzen und damit verbundener Tonlogiken im Rahmen einer kommentierten digitalen Edition nach dem Töneprinzip, die letztlich auch über die Kolmarer Liederhandschrift hinaus für die weitere editorische Erschließung von Tönen und tonalen Kohärenzcharakteristiken spätmittelalterlicher Lieddichtung fruchtbar gemacht werden kann.
         </p>
         
         {/* Hinweis auf kommende Edition */}
