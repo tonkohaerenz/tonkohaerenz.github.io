@@ -19,12 +19,14 @@ export default function Header() {
     "/en": "/",
     "/en/team": "/team",
     "/en/contact": "/kontakt",
+    "/en/digitalEdition":"/digitaleEdition",
   }[pathname] ?? "/";
 
   const englishPath = {
     "/": "/en",
     "/team": "/en/team",
     "/kontakt": "/en/contact",
+    "/digitaleEdition":"/en/digitalEdition",
   }[pathname] ?? "/en";
 
   return (

@@ -6,24 +6,14 @@ export default function HomePage() {
   return (
     <article lang="en" className="article-content">
       {/* Hero Section */}
-      <section className="hero">
-        <Image 
-          src ="/Grundweise-seite1-header.png"
-          alt=""
-          fill
-          className="object-cover -z-10"
-          priority
-        />
-         {/* Abdunkeln */}
-        {/*<div className="absolute inset-0 bg-black/40" /> */}
 
         <header>
-          <div className="overlay-box">
+          <div className="header-secondary">
           <span className="blue-uppercase">
             Research Project
           </span>
           <h1>
-            Tone and coherence. An annotated digital edition of the 'Frauenlobtöne' in the Kolmar song manuscript
+            Tone and coherence. An annotated digital edition of the 'Frauenlobtöne in the Kolmar song manuscript
           </h1>
           <p>
             Funding: DFG | Project duration: 10/2025 – 09/2028<br/>
@@ -31,10 +21,23 @@ export default function HomePage() {
           </p>
           </div>
         </header>
-      </section>
-
       {/* Content Section */}
       <section className="content-section-full">
+              <figure>
+                <a href="https://www.digitale-sammlungen.de/de/view/bsb00105055?page=282,283" target="_blank">
+                <Image
+                  src="/GoldenerTon-Seite1-header.png"
+                  alt="Beschreibung des Bildes"
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto"
+                  priority
+                />
+                </a>
+                <figcaption>
+                  Abbildung: Ausschnitt aus der ersten Seite der Grundweise.
+                </figcaption>
+              </figure>
         <h2>About the Project</h2>
         <p>
           At the center of the proposed project for an annotated digital edition of Frauenlob's tones in k is the fundamental research question, confirmed by the results of our own preliminary work on two of Frauenlob's tones (Würgendrüssel and Zugweise), as to which tonal coherence characteristics, in addition to form and melody, are associated with the tone authorship, the tone principle and the tone names of late medieval poetry. Starting from tone as the unity of text and melody (wort und wîse), the project focuses not only on metrical-formal, musical and individual verse aspects of tone, but also on textual-lyrical forms of coherence. Closely linked to this is the fundamental question of how this particular form of late medieval lyric poetry, including its formal and semantic coherences, can be adequately edited, annotated and visualized. The project thus pursues an equally analytical and result-oriented interest: the scholarly exploration and presentation of late medieval lyrical tonal coherences and associated tonal logics within the framework of an annotated digital edition according to the tonal principle, which can ultimately be made fruitful for the further editorial development of tones and tonal coherence characteristics of late medieval song poetry beyond the Kolmar song manuscript.

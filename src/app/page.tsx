@@ -23,14 +23,16 @@ export default function HomePage() {
       {/* Content Section */}
       <section className="content-section-full">
         <figure>
+          <a href="https://www.digitale-sammlungen.de/de/view/bsb00105055?page=282,283" target="_blank">
           <Image
-            src="/Grundweise-seite1-header.png"
+            src="/GoldenerTon-Seite1.png"
             alt="Beschreibung des Bildes"
             width={1600}
             height={900}
             className="w-full h-auto"
             priority
           />
+          </a>
           <figcaption>
             Abbildung: Ausschnitt aus der ersten Seite der Grundweise.
           </figcaption>
