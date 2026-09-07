@@ -61,11 +61,21 @@ export default function Header() {
               Project
             </Link>
             <Link
+              href="/en/digitalEdition"
+              className={`transition ${
+                pathname.startsWith("/en/digitalEdition")
+                  ? "font-bold text-red"
+                  : "hover:text-red"
+              }`}
+            >
+              Digital Edition
+            </Link>
+            <Link
               href="/en/team"
               className={`transition ${
                 pathname.startsWith("/en/team")
-                  ? "font-bold text-red"
-                  : "hover:text-red"
+                  ? "font-bold text-green"
+                  : "hover:text-green"
               }`}
             >
               Team
@@ -74,21 +84,11 @@ export default function Header() {
               href="/en/contact"
               className={`transition ${
                 pathname.startsWith("/en/contact")
-                  ? "font-bold text-green"
-                  : "hover:text-green"
-              }`}
-            >
-              Contact
-            </Link>
-            <Link
-              href="/en/digitalEdition"
-              className={`transition ${
-                pathname.startsWith("/en/digitalEdition")
                   ? "font-bold text-blue"
                   : "hover:text-blue"
               }`}
             >
-              Outlook:<br/>Digital Edition
+              Contact
             </Link>
           </nav>
           <nav className="nav-links-language">
@@ -145,11 +145,22 @@ export default function Header() {
             </Link>
 
             <Link
+              href="/digitaleEdition"
+              className={`transition ${
+                pathname.startsWith("/digitaleEdition")
+                  ? "font-bold text-red"
+                  : "hover:text-red"
+              }`}
+            >
+              Digitale Edition
+            </Link>
+
+            <Link
               href="/team"
               className={`transition ${
                 pathname.startsWith("/team")
-                  ? "font-bold text-red"
-                  : "hover:text-red"
+                  ? "font-bold text-green"
+                  : "hover:text-green"
               }`}
             >
               Team
@@ -159,22 +170,11 @@ export default function Header() {
               href="/kontakt"
               className={`transition ${
                 pathname.startsWith("/kontakt")
-                  ? "font-bold text-green"
-                  : "hover:text-green"
-              }`}
-            >
-              Kontakt
-            </Link>
-            <Link
-              href="/digitaleEdition"
-              className={`transition ${
-                pathname.startsWith("/digitaleEdition")
                   ? "font-bold text-blue"
                   : "hover:text-blue"
               }`}
             >
-              Ausblick:<br/>
-              Digitale Edition
+              Kontakt
             </Link>
           </nav>
           <nav className="nav-links-language">
