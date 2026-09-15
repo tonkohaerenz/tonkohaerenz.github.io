@@ -34,7 +34,7 @@ export default function HomePage() {
           />
           </a>
           <figcaption>
-            Abbildung: Erste Seite des Goldenen Tons.
+            Bayrische Staatsbibliothek München, Cgm 4997 ‚Kolmarer Liederhandschrift‘, Papiercodex, 293 x 200 mm, um 1460, fol. 139r (Ausschnitt).
           </figcaption>
         </figure>
         <h2>Über das Projekt</h2>

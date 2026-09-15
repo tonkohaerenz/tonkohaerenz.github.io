@@ -20,10 +20,18 @@ export default function KontaktPage() {
 
         <div>
           <h2>E-Mail</h2>
-          <p>
-            <a href="mailto:kontakt@projekt.de" className="text-blue hover:underline">
-              contact@project.en
+          <p>For organizational questions and suggestions, please contact Benedikt Gnosa:<br/>
+            <a href="mailto:benedikt.gnosa@uni-bonn.de" className="text-blue hover:underline">
+              benedikt.gnosa@uni-bonn.de
             </a>
+          </p>
+          <br/>
+          <p>If you have any questions or suggestions regarding our editorial approach or the drafts we are producing, please contact Malin Kipke:<br/>
+            <a href="mailto:malinkipke@aol.com" className="text-blue hover:underline">malinkipke@aol.com</a>
+          </p>
+          <br/>
+          <p>If you have any questions or suggestions regarding the project's digital infrastructure, please contact Leonie Weiß:<br/>
+            <a href="mailto:weiss@linglit.tu-darmstadt.de" className="text-blue hover:underline">weiss@linglit.tu-darmstadt.de</a>
           </p>
         </div>
       </div>
