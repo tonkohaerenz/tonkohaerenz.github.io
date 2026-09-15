@@ -82,8 +82,8 @@ export default function TeamPage() {
         {teamMembersBonn.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="cardLinkBonn">
-              <div className="icon-circle">
+              <div className="cardLink">
+              <div className="icon-circle-Bonn">
                 {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
               <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
@@ -93,7 +93,7 @@ export default function TeamPage() {
             </a>
           ) : (
           <div key={index} className="card">
-            <div className="icon-circle">
+            <div className="icon-circle-Bonn">
               {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
             <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
@@ -110,8 +110,8 @@ export default function TeamPage() {
         {teamMembersFrankfurt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="cardLinkFrankfurt">
-              <div className="icon-circle">
+              <div className="cardLink">
+              <div className="icon-circle-Frankfurt">
                 {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
               <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
@@ -121,7 +121,7 @@ export default function TeamPage() {
             </a>
           ) : (
           <div key={index} className="card">
-            <div className="icon-circle">
+            <div className="icon-circle-Frankfurt">
               {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
             <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
@@ -138,8 +138,8 @@ export default function TeamPage() {
         {teamMembersDarmstadt.map((member, index) => (
           member.link? (
             <a key={index} href={member.link} target="_blank">
-              <div className="cardLinkDarmstadt">
-              <div className="icon-circle">
+              <div className="cardLink">
+              <div className="icon-circle-Darmstadt">
                 {member.name.charAt(0)+member.surname.charAt(0)}
               </div>
               <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>
@@ -149,7 +149,7 @@ export default function TeamPage() {
             </a>
           ) : (
           <div key={index} className="card">
-            <div className="icon-circle">
+            <div className="icon-circle-Darmstadt">
               {member.name.charAt(0)+member.surname.charAt(0)}
             </div>
             <h3>{[member.title, member.name, member.surname].filter(Boolean).join(' ')}{member.title2 ? `, ${member.title2}`:''}</h3>

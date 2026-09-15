@@ -9,9 +9,13 @@
 
   /* Projektfarben */
   --blue: #1c82b3;
+  --blue-transparent: rgba(28, 130, 179, 0.35);
   --green: #14686a;
+  --green-transparent: rgba(20, 104, 106, 0.35);
   --red: #ae3761;
+  --red-transparent: rgba(174, 55, 97, 0.35);
   --yellow: #f0af13;
+  --yellow-transparent: rgba(240, 175, 19, 0.35);
 
   /* Standard-Schrift */
   --foreground: #171717;
@@ -329,6 +333,51 @@ hr {
   height: 3rem;
   background-color: rgb(28 130 179 / 30%);
   color: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-circle);
+}
+
+.icon-circle-Frankfurt {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--blue-transparent);
+  color: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-circle);
+}
+
+.icon-circle-Bonn {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--yellow-transparent);
+  color: var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-circle);
+}
+
+.icon-circle-Darmstadt {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--red-transparent);
+  color: var(--red);
   border-radius: 50%;
   display: flex;
   align-items: center;
