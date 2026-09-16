@@ -6,7 +6,6 @@ export default function KontaktPage() {
         <h1>Contact & Legal Notice</h1>
         <p>Please feel free to contact us with any questions or suggestions regarding the project.</p>
       </header>
-
       <div className="card">
         <div>
           <h2>Project address</h2>
@@ -17,7 +16,9 @@ export default function KontaktPage() {
             12345 City
           </p>
         </div>
+      </div>
 
+      <div className="card">
         <div>
           <h2>E-Mail</h2>
           <h3>Organizational matters</h3>

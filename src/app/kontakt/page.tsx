@@ -17,7 +17,8 @@ export default function KontaktPage() {
             12345 Musterstadt
           </p>
         </div>
-
+      </div>
+      <div className="card">
         <div>
           <h2>E-Mail</h2>
           <h3>Organisatorisches</h3>
