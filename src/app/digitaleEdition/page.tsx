@@ -2,8 +2,8 @@
 
 export default function DigitaleEditionPage() {
   return (
-    <article lang="en" className="article-content">
-          <div className="overlay-box">
+    <section lang="de">
+          <div className="card">
           <span className="blue-uppercase">
             Ausblick
           </span>
@@ -14,6 +14,6 @@ export default function DigitaleEditionPage() {
             In der nächsten Phase des Projekts wird an dieser Stelle das digitale Editionsportal mit Volltextsuche, Digitalisaten, Kohärenzkommentaren und Kohärenzvisualisierungen veröffentlicht.
             </p>
           </div>
-    </article>
+    </section>
   );
 }

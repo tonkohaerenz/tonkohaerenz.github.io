@@ -2,8 +2,8 @@
 
 export default function DigitalEditionPage() {
   return (
-    <article lang="en" className="article-content">
-          <div className="overlay-box">
+    <section lang="en">
+          <div className="card">
           <span className="blue-uppercase">
             Outlook
           </span>
@@ -14,6 +14,6 @@ export default function DigitalEditionPage() {
             In the next phase of the project, the digital edition portal — featuring full-text search, digitized materials, coherence annotations, and coherence visualizations — will be published here.
           </p>
           </div>
-    </article>
+    </section>
   );
 }
