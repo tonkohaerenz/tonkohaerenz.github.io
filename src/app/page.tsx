@@ -25,7 +25,7 @@ export default function HomePage() {
         <figure>
           <a href="https://www.digitale-sammlungen.de/de/view/bsb00105055?page=282,283" target="_blank">
           <Image
-            src="/GoldenerTon-Seite1.png"
+            src="/GoldenerTon-Seite1-header.png"
             alt="Beschreibung des Bildes"
             width={1600}
             height={900}
@@ -34,7 +34,7 @@ export default function HomePage() {
           />
           </a>
           <figcaption>
-            Bayrische Staatsbibliothek München, Cgm 4997 ‚Kolmarer Liederhandschrift‘, Papiercodex, 293 x 200 mm, um 1460, fol. 139r (Ausschnitt).
+            Bayerische Staatsbibliothek München, Cgm 4997 ‚Kolmarer Liederhandschrift‘, Papiercodex, 293 x 200 mm, um 1460, fol. 139r (Ausschnitt).
           </figcaption>
         </figure>
         <h2>Über das Projekt</h2>
@@ -42,13 +42,6 @@ export default function HomePage() {
           Im Zentrum des Projekts zu einer kommentierten digitalen Edition der 22 ‚Frauenlobtöne‘ in der Kolmarer Liederhandschrift k aus der zweiten Hälfte des 15. Jahrhunderts steht die grundlegende Forschungsfrage, welche spezifischen textuell-lyrischen Kohärenzformen und tonalen Kohärenzcharakteristiken zusätzlich zu Form und Melodie mit der Tonautorschaft, dem Töneprinzip und den Tonnamen spätmittelalterlicher Lyrik verbunden sind. Eng damit verknüpft ist die fundamentale Frage, wie sich diese besondere Form spätmittelalterlicher Lyrik inklusive ihrer formalen und semantischen Kohärenzen adäquat edieren, kommentieren und visualisieren lässt. Damit verfolgt das Projekt ein in gleicher Weise analytisches wie ergebnisorientiertes Interesse: die wissenschaftliche Exploration und Präsentation spätmittelalterlicher lyrischer Tonkohärenzen und damit verbundener Tonlogiken im Rahmen einer kommentierten digitalen Edition nach dem Töneprinzip, die letztlich auch über die Kolmarer Liederhandschrift hinaus für die weitere editorische Erschließung von Tönen und tonalen Kohärenzcharakteristiken spätmittelalterlicher Lieddichtung fruchtbar gemacht werden kann.
         </p>
         
-        {/* Hinweis auf kommende Edition */}
-        <div className="info-box">
-          <h3 className="blue">Ausblick: Digitale Edition</h3>
-          <p className="blue">
-            In der nächsten Phase des Projekts wird an dieser Stelle das digitale Editionsportal mit Volltextsuche, Digitalisaten, Kohärenzkommentaren und Kohärenzvisualisierungen veröffentlicht.
-          </p>
-        </div>
       </section>
     </article>
   );
