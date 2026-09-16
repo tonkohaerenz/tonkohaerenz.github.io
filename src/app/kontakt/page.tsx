@@ -20,16 +20,19 @@ export default function KontaktPage() {
 
         <div>
           <h2>E-Mail</h2>
+          <h3>Organisatorisches</h3>
           <p>Bei organisatorischen Fragen und Anregungen wenden Sie sich bitte an Benedikt Gnosa:<br/>
             <a href="mailto:benedikt.gnosa@uni-bonn.de" className="text-blue hover:underline">
               benedikt.gnosa@uni-bonn.de
             </a>
           </p>
           <br/>
+          <h3>Editorisches Vorgehen</h3>
           <p>Bei Fragen und Anregungen zu unserem editorischen Vorgehen sowie den entstehenden Fassungen wenden Sie sich bitte an Malin Kipke:<br/>
             <a href="mailto:malinkipke@aol.com" className="text-blue hover:underline">malinkipke@aol.com</a>
           </p>
           <br/>
+          <h3>Digitale Infrastruktur</h3>
           <p>Bei Fragen und Anregungen zu der digitalen Infrastruktur des Projekts melden Sie sich bitte bei Leonie Weiß:<br/>
             <a href="mailto:weiss@linglit.tu-darmstadt.de" className="text-blue hover:underline">weiss@linglit.tu-darmstadt.de</a>
           </p>
