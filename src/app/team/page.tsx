@@ -8,7 +8,7 @@ const teamMembersBonn = [
     name: 'Claudia',
     surname: 'Lauer',
     role: 'Projektleitung (Bonn)',
-    bio: 'Verbundkoordination, Koordination Team Bonn, Kohärenzbildung',
+    bio: 'Verbundkoordination, Koordination Team Bonn und Kohärenzbildung',
     link: 'https://www.iglk.uni-bonn.de/de/institut/abteilungen/germanistische-mediaevistik/personalseiten/claudia-lauer'
   },
   {
@@ -33,7 +33,7 @@ const teamMembersDarmstadt = [
     name: 'Andrea',
     surname: 'Rapp',
     role: 'Projektleitung (Darmstadt)',
-    bio: 'Verbundkoordination, Koordination Team Darmstadt, Digitale Infrastruktur',
+    bio: 'Verbundkoordination, Koordination Team Darmstadt und Digitale Infrastruktur',
     link: 'https://www.linglit.tu-darmstadt.de/institutlinglit/mitarbeitende/andrearapp/index.de.jsp'
   },
   {
@@ -41,7 +41,7 @@ const teamMembersDarmstadt = [
     surname: 'Weiß',
     title2: 'M.A.',
     role: 'Wissenschaftliche Mitarbeiterin',
-    bio: 'Digitale Infrastruktur, Website, Datenformat',
+    bio: 'Digitale Infrastruktur, Datenkodierung und Website',
   }
 ];
 const teamMembersFrankfurt = [
@@ -50,7 +50,7 @@ const teamMembersFrankfurt = [
     name: 'Franziska',
     surname: 'Wenzel',
     role: 'Projektleitung (Frankfurt)',
-    bio: 'Verbundkoordination, Koordination Team Frankfurt, Kohärenzbildung',
+    bio: 'Verbundkoordination, Koordination Team Frankfurt und Kohärenzbildung',
     link: 'https://www.fb10.uni-frankfurt.de/97301012/FB_10___IDLD___%C3%84DL___Mitarbeiterinnen_und_Mitarbeiter___Lehrende___Wenzel'
   },
   {
@@ -58,7 +58,7 @@ const teamMembersFrankfurt = [
     surname: 'Kipke',
     title2: 'M.A.',
     role: 'Wissenschaftliche Mitarbeiterin',
-    bio: 'Transkription, Lesefassung, Übersetzung, Datenkodierung',
+    bio: 'Transkription, Lesefassung, Übersetzung und Datenkodierung',
     link: 'https://www.fb10.uni-frankfurt.de/127664970/Kipke__Malin__M_A?'
   },
   {
