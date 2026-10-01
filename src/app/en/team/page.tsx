@@ -15,7 +15,7 @@ const teamMembersBonn = [
     surname: 'Gnosa',
     title2: 'M.A.',
     role: 'Research Assistant',
-    bio: 'Coherence Analysis',
+    bio: 'Coherence Analysis, eScriptorium',
     link: 'https://www.iglk.uni-bonn.de/de/institut/abteilungen/germanistische-mediaevistik/personalseiten/benedikt_gnosa'
   },
   {
