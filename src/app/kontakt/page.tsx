@@ -9,7 +9,7 @@ export default function KontaktPage() {
 
       <div className="card">
         <div>
-          <h2>Projektadresse</h2>
+          <h2>Projektadressen</h2>
           <p>
             Muster-Universität<br />
             Institut für Digitale Geisteswissenschaften<br />
@@ -30,7 +30,7 @@ export default function KontaktPage() {
           <br/>
           <h3>Editionskonzept</h3>
           <p>Wenden Sie sich bitte an Malin Kipke:<br/>
-            <a href="mailto:malinkipke@aol.com" className="text-blue hover:underline">malinkipke@aol.com</a>
+            <a href="mailto:kipke@em.uni-frankfurt.de" className="text-blue hover:underline">kipke@em.uni-frankfurt.de</a>
           </p>
           <br/>
           <h3>Digitale Infrastruktur</h3>

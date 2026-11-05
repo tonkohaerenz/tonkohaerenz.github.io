@@ -8,12 +8,15 @@ export default function KontaktPage() {
       </header>
       <div className="card">
         <div>
-          <h2>Project address</h2>
+          <h2>Project addresses</h2>
           <p>
-            University<br />
-            Institute for Digitale Humanities<br />
-            Street 42<br />
-            12345 City
+            
+          </p>
+          <p>
+            Technische Universität Darmstadt<br />
+            Institut für Sprach- und Literaturwissenschaft<br />
+            Residenzschloss 1<br />
+            64283 Darmstadt
           </p>
         </div>
       </div>
@@ -30,7 +33,7 @@ export default function KontaktPage() {
           <br/>
           <h3>Editorial concept</h3>
           <p>Please contact Malin Kipke:<br/>
-            <a href="mailto:malinkipke@aol.com" className="text-blue hover:underline">malinkipke@aol.com</a>
+            <a href="mailto:kipke@em.uni-frankfurt.de" className="text-blue hover:underline">kipke@em.uni-frankfurt.de</a>
           </p>
           <br/>
           <h3>Digital infrastructure</h3>
