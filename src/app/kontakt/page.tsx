@@ -10,11 +10,31 @@ export default function KontaktPage() {
       <div className="card">
         <div>
           <h2>Projektadressen</h2>
+          <h3>Standort Bonn</h3>
           <p>
-            Muster-Universität<br />
-            Institut für Digitale Geisteswissenschaften<br />
-            Musterstraße 42<br />
-            12345 Musterstadt
+            Abteilung für Germanistische Mediävistik<br />
+            Rheinische Friedrich-Wilhelms-Universität Bonn<br />
+            Institut für Germanistik, Vergleichende Literatur- und Kulturwissenschaft<br />
+            Rabinstr. 8<br />
+            D-53111 Bonn<br />
+          </p>
+          <br/>
+          <h3>Standort Frankfurt</h3>
+          <p>
+            Goethe-Universität Frankfurt a. M.<br />
+            Fachbereich 10 / Neuere Philologien<br />
+            Institut für dt. Literatur und ihre Didaktik PF 17<br />
+            Abteilung für Ältere deutsche Literatur<br />
+            Norbert-Wollheim-Platz 1<br />
+            60323 Frankfurt am Main<br />
+          </p>
+          <br/>
+          <h3>Standort Darmstadt</h3>
+          <p>
+            Technische Universität Darmstadt<br />
+            Institut für Sprach- und Literaturwissenschaft<br />
+            Residenzschloss 1<br />
+            64283 Darmstadt
           </p>
         </div>
       </div>
