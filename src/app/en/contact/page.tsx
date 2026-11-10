@@ -12,8 +12,8 @@ export default function KontaktPage() {
           <h3>Facility Bonn</h3>
           <p>
             Abteilung für Germanistische Mediävistik<br />
-            Rheinische Friedrich-Wilhelms-Universität Bonn<br />
             Institut für Germanistik, Vergleichende Literatur- und Kulturwissenschaft<br />
+            Rheinische Friedrich-Wilhelms-Universität Bonn<br />
             Rabinstr. 8<br />
             D-53111 Bonn<br />
           </p>
