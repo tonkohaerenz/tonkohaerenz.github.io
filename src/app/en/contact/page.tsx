@@ -9,7 +9,7 @@ export default function KontaktPage() {
       <div className="card">
         <div>
           <h2>Project addresses</h2>
-          <h3>Facility Bonn</h3>
+          <h3>Bonn</h3>
           <p>
             Abteilung für Germanistische Mediävistik<br />
             Institut für Germanistik, Vergleichende Literatur- und Kulturwissenschaft<br />
@@ -18,7 +18,7 @@ export default function KontaktPage() {
             D-53111 Bonn<br />
           </p>
           <br/>
-          <h3>Facility Frankfurt</h3>
+          <h3>Frankfurt</h3>
           <p>
             Goethe-Universität Frankfurt a. M.<br />
             Fachbereich 10 / Neuere Philologien<br />
@@ -28,7 +28,7 @@ export default function KontaktPage() {
             60323 Frankfurt am Main<br />
           </p>
           <br/>
-          <h3>Facility Darmstadt</h3>
+          <h3>Darmstadt</h3>
           <p>
             Technical University of Darmstadt<br />
             Institute of Linguistics and Literary Studies<br />
