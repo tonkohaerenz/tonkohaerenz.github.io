@@ -25,7 +25,7 @@ export default function HomePage() {
         <figure>
           <a href="https://www.digitale-sammlungen.de/de/view/bsb00105055?page=282,283" target="_blank">
           <Image
-            src="/GoldenerTon-Seite1-header.png"
+            src="/GoldenerTon-Seite1-header.webp"
             alt="Beschreibung des Bildes"
             width={1600}
             height={900}
