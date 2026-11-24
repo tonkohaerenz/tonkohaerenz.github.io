@@ -1,7 +1,17 @@
 import Link from "next/link";
 
 // app/en/team/page.tsx
-const teamMembersBonn = [
+type TeamMember = {
+  name: string;
+  surname: string;
+  title?: string;
+  title2?: string;
+  role?: string;
+  bio?: string;
+  link?: string;
+};
+
+const teamMembersBonn: TeamMember[] = [
   {
     title: 'Prof. Dr.',
     name: 'Claudia',
@@ -26,7 +36,7 @@ const teamMembersBonn = [
     bio: 'Transcription, Reading Text and Translation'
   }
 ];
-const teamMembersDarmstadt = [
+const teamMembersDarmstadt: TeamMember[] = [
   {
     title: 'Prof. Dr.',
     name: 'Andrea',
@@ -43,7 +53,7 @@ const teamMembersDarmstadt = [
     bio: 'Digital Infrastructure, Data Encoding and Website',
   }
 ];
-const teamMembersFrankfurt = [
+const teamMembersFrankfurt: TeamMember[] = [
   {
     title: 'Prof. Dr.',
     name: 'Franziska',
