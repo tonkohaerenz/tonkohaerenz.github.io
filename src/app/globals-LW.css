@@ -165,38 +165,7 @@ Link {
   color: var(--text-muted);
 }
 
-header {
-  background-color: var(--background);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.5rem;
-  align-items: center;
-}
 
-.header-primary {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  padding-top: 0.5rem;
-  box-shadow: var(--shadow-header);
-}
-
-.header-secondary {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.header-primary-container {
-  width: 100%;
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 footer {
   background-color: #0f172a; /* slate-900 */
@@ -288,11 +257,6 @@ footer {
   margin-top: 0.5rem;
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 hr {
   border: none;
@@ -448,69 +412,6 @@ figure {
   border-radius: 0.5rem;
 }
 
-.nav-links-language {
-  display: flex;
-  gap: 0.25rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  align-items: center;
-}
-
-.language-divider {
-  display: flex;
-  width: 1px;
-  height: 1em;
-  background-color: currentColor;
-  position: relative;
-}
-
-.nav-links-pages {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.header-primary-content {
-  width: 100%;
-  max-width: 64rem;
-  height: 4rem;
-  margin: 0 auto;
-  padding: 1rem;
-  /*padding: 0 1rem;*/
-
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo {
-  font-weight: 600;
-  font-size: 1.125rem;
-  letter-spacing: 0.025em;
-  color: var(--heading-secondary);
-  line-height: 1.25;
-  transition: color 0.2s ease;
-}
-
-.logo:hover {
-  color: var(--blue);
-}
-
-.header-primary-actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 2.5rem;
-  height: 4rem;
-}
 
 .social-links {
   display: flex;
@@ -521,4 +422,295 @@ figure {
 .a-blue:hover {
   text-decoration: underline;
   color: var(--blue);
+
+}
+
+
+/* ==============================
+   HEADER – RESPONSIVE
+============================== */
+
+header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header-primary {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: var(--shadow-header);
+  box-sizing: border-box;
+}
+
+.header-secondary {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Hauptcontainer */
+
+.header-primary-container {
+  width: 100%;
+  max-width: 100rem;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.75rem, 2vw, 2rem);
+
+  box-sizing: border-box;
+}
+
+/* Logo und Projekttitel */
+
+.header-primary-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+
+  flex: 0 1 auto;
+  min-width: 0;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.header-primary-content img {
+  display: block;
+  width: clamp(40px, 4vw, 60px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.4vw, 1.125rem);
+  letter-spacing: 0.025em;
+  color: var(--heading-secondary);
+  line-height: 1.25;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.logo:hover {
+  color: var(--blue);
+}
+
+/* Navigation und Einstellungen */
+
+.header-primary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(0.75rem, 2vw, 2.5rem);
+
+  flex: 0 1 auto;
+  min-width: 0;
+  height: auto;
+}
+
+.nav-links-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 500;
+  color: var(--text-muted);
+
+  white-space: nowrap;
+}
+
+.nav-links-pages a,
+.nav-links-language a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links-language {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.language-divider {
+  display: flex;
+  width: 1px;
+  height: 1em;
+  background-color: currentColor;
+  opacity: 0.5;
+}
+
+/* Theme Toggle */
+
+.header-primary-actions nav:last-child {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 1100px) {
+
+  .header-primary-container {
+    gap: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .header-primary-content {
+    gap: 0.5rem;
+  }
+
+  .header-primary-actions {
+    gap: 1rem;
+  }
+
+  .nav-links-pages {
+    gap: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-links-language {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+}
+
+/* ==============================
+   KLEINERE TABLETS
+============================== */
+
+@media (max-width: 900px) {
+
+  .header-primary-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+    height: auto;
+  }
+
+  .header-primary-content {
+    justify-content: center;
+  }
+
+  .header-primary-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links-pages {
+    gap: 1rem;
+  }
+}
+
+/* ==============================
+   SMARTPHONES
+============================== */
+
+@media (max-width: 600px) {
+
+  .header-primary-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .header-primary-content {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-primary-content img {
+    width: 44px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .header-primary-actions {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-links-pages {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+    font-size: 0.875rem;
+    white-space: normal;
+  }
+
+  .nav-links-language {
+    justify-content: center;
+  }
+}
+
+/* ==============================
+   SEHR KLEINE SMARTPHONES
+============================== */
+
+@media (max-width: 380px) {
+
+  .header-primary-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .header-primary-content img {
+    width: 38px;
+  }
+
+  .logo {
+    font-size: 0.9rem;
+  }
+
+  .nav-links-pages {
+    gap: 0.625rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .header-primary-actions {
+    gap: 0.625rem;
+  }
+
+  .nav-links-language {
+    font-size: 0.8rem;
+  }
 }
