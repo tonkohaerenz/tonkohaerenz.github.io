@@ -55,7 +55,7 @@ export default function Header() {
             <Link
               href="/en"
               className={`transition ${
-                pathname === "/en"
+                (pathname === "/en" || pathname === "/en/")
                   ? "font-bold text-yellow"
                   : "hover:text-yellow"
               }`}
